@@ -37,7 +37,7 @@ class Main():
         os.system(command);
         
     def copyXml(self):
-        command = "xcopy " + self.workflow_path + " " + self.target_path;
+        command = "xcopy /s " + self.workflow_path + " " + self.target_path;
         print command
         os.system(command);
         
